@@ -88,6 +88,8 @@ export default class BoardController {
       return;
     }
 
+    remove(this._loadMoreButtonComponent);
+
     const container = this._container.getElement();
     render(container, this._loadMoreButtonComponent, RenderPosition.BEFOREEND);
 
